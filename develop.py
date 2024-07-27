@@ -26,7 +26,8 @@ class TestBooksCollector:
         # Проверяем, что нельзя установить несуществующий жанр
         self.collector.set_book_genre("The Shining", "Приключения")
         self.assertEqual(self.collector.get_book_genre("The Shining"), "Ужасы")
-        from main import BooksCollector
+        
+from main import BooksCollector
 
 class TestBooksCollector:
     def setUp(self):
